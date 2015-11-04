@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TriviaApp</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title">Welcome to Trivia App</string>
+    <string name="string">Start Trivia</string>
+    <string name="create">Create Quiz Question</string>
+    <string name="delete">Delete My Question</string>
+    <string name="exit">Exit</string>
+    <string name="title_activity_trivia">TriviaActivity</string>
+    <string name="quit">Quit</string>
+    <string name="next">Next</string>
+    <string name="question">Question text goes here...</string>
+    <string name="q1">Q1</string>
+    <string name="time">Time Left</string>
+    <string name="title_activity_create_question">CreateQuestionActivity</string>
+    <string name="title_activity_result">ResultActivity</string>
+    <string name="quehint">Type Question here</string>
+    <string name="opthint">Type Option Here</string>
+    <string name="submit">Submit</string>
+    <string name="imghint">Paste image URL here.. (optional)</string>
+    <string name="newque">Create a New Question</string>
+    <string name="trivia_result">Trivia Result</string>
+    <string name="correct_ans">Correct Answer</string>
+    <string name="ans"></string>
+    <string name="msg">Try again and see if you can get!</string>
+    <string name="try_again">Try Again</string>
+
+</resources>

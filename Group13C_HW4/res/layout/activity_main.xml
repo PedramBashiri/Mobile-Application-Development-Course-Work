@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/ic_launcher" />
+
+    <Button
+        android:id="@+id/progbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginTop="46dp"
+        android:text="Programs" />
+
+    <Button
+        android:id="@+id/topicsbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/progbtn"
+        android:layout_alignBottom="@+id/progbtn"
+        android:layout_alignParentRight="true"
+        android:text="Topics" />
+
+    <Button
+        android:id="@+id/favbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="Favourites" />
+
+    <Button
+        android:id="@+id/exitbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/favbtn"
+        android:layout_alignLeft="@+id/topicsbtn"
+        android:layout_alignParentRight="true"
+        android:text="Exit" />
+
+</RelativeLayout>

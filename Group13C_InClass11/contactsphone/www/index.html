@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <!-- Include jQuery Mobile stylesheets -->
+<link rel="stylesheet"
+	href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+        <script src="https://raw.github.com/Sjeiti/TinySort/master/src/jquery.tinysort.js"></script>
+<!-- Include the jQuery library -->
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+
+<!-- Include the jQuery Mobile library -->
+<script
+	src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+        <title>My Contacts</title>
+    </head>
+    <body>
+        <div data-role="page">
+
+		<div data-role="header">
+			<h1>My Contacts</h1>
+		</div>
+
+		<div data-role="tabs" id="tabs">
+  <div data-role="navbar">
+    <ul>
+      <li id="home"><a href="#homePage" data-ajax="false">Home</a></li>
+      <li id="save"><a href="#savePage" data-ajax="false">Save</a></li>
+      <li id="find"><a href="#findPage" data-ajax="false">Find</a></li>
+    </ul>
+  </div>
+  <div id="homePage" class="ui-body-d ui-content" align="center">
+    <img src="icon.png" style="width: 300px;"></img>
+  </div>
+ <div id="savePage" class="ui-body-d ui-content">
+    <h3 class="ui-bar ui-bar-a">Contact Name</h3>
+      <div class="ui-body">
+          <form>
+     <label for="dispName">Display Name:</label>
+     <input type="text" data-clear-btn="true" name="dispName" id="dispName" value="">
+     <label for="nName">Nick Name:</label>
+     <input type="text" data-clear-btn="true" name="nName" id="nName" value="">
+         </form>
+      </div>
+    <h3 class="ui-bar ui-bar-a">Full Name</h3>
+      <div class="ui-body">
+          <form>
+     <label for="gName">Given Name:</label>
+     <input type="text" data-clear-btn="true" name="gName" id="gName" value="">
+     <label for="fName">Family Name:</label>
+     <input type="text" data-clear-btn="true" name="fName" id="fName" value="">
+         </form>
+      </div>
+    <h3 class="ui-bar ui-bar-a">Phone Numbes</h3>
+      <div class="ui-body">
+          <form>
+     <label for="wTel">Work Tel:</label>
+     <input type="text" data-clear-btn="true" name="wTel" id="wTel" value="">
+     <label for="mTel">Mobile Tel:</label>
+     <input type="text" data-clear-btn="true" name="mTel" id="mTel" value="">
+     <label for="hTel">Home Tel:</label>
+     <input type="text" data-clear-btn="true" name="hTel" id="hTel" value="">
+         </form>
+      </div>
+    
+    <button class="ui-btn" id = "saveBtn" onclick="saveContact()">Save Contact</button>
+  </div>
+  <div id="findPage">
+    <ul id="contactshowul" data-role="listview" data-autodividers="true" data-filter="true" data-inset="true">
+    
+</ul>
+  </div>
+</div>
+	</div>
+        <script type="text/javascript" src="cordova.js"></script>
+        
+        <script type="text/javascript">
+            
+        </script>
+    </body>
+</html>
